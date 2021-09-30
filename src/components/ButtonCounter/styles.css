@@ -1,0 +1,36 @@
+.container {
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.divBtn {
+  width: 9rem;
+  background-color: rgb(215, 231, 250);
+  height: 20vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+}
+
+.divBtn button {
+  padding: 10px;
+  margin: 15px;
+  width: 3rem;
+  border-radius: 8px;
+  font-weight: bolder;
+  border-radius: 1px solid black;
+}
+.divBtn_add {
+  background-color: rgba(47, 255, 109, 0.575);
+}
+.divBtn_add:active {
+  border: 1px solid greenyellow;
+}
+.divBtn_rem {
+  background-color: rgba(255, 38, 0, 0.685);
+}
+.divBtn_rem:active {
+  border: 1px solid red;
+}
