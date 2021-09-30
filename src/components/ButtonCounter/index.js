@@ -4,16 +4,15 @@ import { addCounter, remCounter } from "../../store/modules/counter/actions";
 import "./styles.css";
 
 const ButtonCounter = () => {
-  const [counter, setCounter] = useState(0);
   const dispatch = useDispatch();
 
+  const cont = useSelector((state) => state.counter);
+
   const handleAddCounter = () => {
-    setCounter(counter + 1);
-    dispatch(addCounter(counter));
+    dispatch(addCounter(cont));
   };
   const handleRemCounter = () => {
-    setCounter(counter - 1);
-    dispatch(addCounter(counter));
+    dispatch(remCounter(cont));
   };
   return (
     <>
